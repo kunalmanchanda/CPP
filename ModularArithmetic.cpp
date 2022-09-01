@@ -46,6 +46,9 @@ ll pow(ll x, ll n) {
     if(n == 1) 
         return mod(x);
     
+    if(n == -1)
+        return mod(1/x);
+    
     ll temp = mod(pow(x, n/2));
 
     if(n%2 == 0)
